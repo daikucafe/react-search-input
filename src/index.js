@@ -37,6 +37,7 @@ class Search extends Component {
       value,
       fuzzy,
       inputClassName,
+      inputRef,
       ...inputProps
     } = this.props // eslint-disable-line no-unused-vars
     inputProps.type = inputProps.type || 'search'
@@ -46,7 +47,7 @@ class Search extends Component {
     inputProps.placeholder = inputProps.placeholder || 'Search'
     return (
       <div className={className}>
-        <input {...inputProps} />
+        <input {...inputProps} ref={inputRef} />
       </div>
     )
   }
@@ -92,6 +93,7 @@ Search.propTypes = {
   className: PropTypes.string,
   inputClassName: PropTypes.string,
   onChange: PropTypes.func,
+  inputRef: PropTypes.func,
   caseSensitive: PropTypes.bool,
   sortResults: PropTypes.bool,
   fuzzy: PropTypes.bool,
