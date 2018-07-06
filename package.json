@@ -2,9 +2,9 @@
   "name": "react-search-input",
   "version": "0.11.3",
   "description": "Simple react.js component for a search input, providing a filter function.",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "files": [
-    "lib"
+    "src"
   ],
   "devDependencies": {
     "babel-cli": "^6.8.0",
